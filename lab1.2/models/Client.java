@@ -39,6 +39,10 @@ public class Client {
         return this.points;
     }
 
+    public boolean hasDescount() {
+        return this.points >= 500;
+    }
+
     public void zeroPoints() {
         this.points = 0;
     }

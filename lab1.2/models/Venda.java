@@ -44,15 +44,26 @@ public class Venda {
     }
 
     public void criarPagamento() {
-        double valorTotal = this.itens.values().stream().mapToDouble(item -> item.subtotal()).sum();
+        double valorTotal = getTotalValor();
 
         this.pagamento = new Pagamento(valorTotal, this.client.getCpf());
     }
 
     public void criarPagamento(String cpf) {
-        double valorTotal = this.itens.values().stream().mapToDouble(item -> item.subtotal()).sum();
+        double valorTotal = getTotalValor();
+
 
         this.pagamento = new Pagamento(valorTotal, cpf);
     }
 
+    public double getTotalValor() {
+        double allValue = this.itens.values().stream().mapToDouble(item -> item.subtotal()).sum();
+
+        if (this.client.hasDescount()) {
+            this.client.zeroPoints();
+            return allValue * 0.95;
+        }
+
+        return allValue;
+    }
 }

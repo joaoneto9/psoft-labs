@@ -43,7 +43,12 @@ public class ItemVenda {
     }
 
     public double subtotal() {
-        return product.getPrice() * quantity;
+        double allValue = product.getPrice() * quantity;
+
+        if (quantity >= 20) {
+            return allValue * 0.9;
+        }
+        return allValue;
     }
     
 }

@@ -14,6 +14,42 @@ public class Mercado {
         this.vendas = new HashMap<>();
     }
 
+    public boolean addClient() {
+
+    }
+
+    public boolean addVenda() {
+
+    }
+
+    public String getVenda() {
+
+    }
+
+    public boolean addProduct() {
+
+    }
+
+    public boolean registrarPagamentoVenda() {
+
+    }
+
+    public void addItemVenda() {
+
+    }
+
+    public void addItemVenda(int quantity) {
+        
+    }
+
+    public void removeItemVenda() {
+        
+    }
+
+    public void removeItemVenda(int quantity) {
+        
+    }
+
 
     
 }
