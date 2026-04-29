@@ -59,8 +59,7 @@ public class Venda {
     public double getTotalValor() {
         double allValue = this.itens.values().stream().mapToDouble(item -> item.subtotal()).sum();
 
-        if (this.client.hasDescount()) {
-            this.client.zeroPoints();
+        if (this.client.useDescount()) {
             return allValue * 0.95;
         }
 
