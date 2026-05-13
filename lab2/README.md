@@ -1,0 +1,5 @@
+### Princípios de Projeto de Software e Code Smells
+
+Uma empresa de tecnologia utiliza Sprints, ciclos de desenvolvimento, para a produção de software. Cada time de desenvolvimento é responsável por um produto de software da empresa e os times são compostos por desenvolvedores e um gerente. A empresa possui um Product Owner que supervisiona todos os produtos de software desenvolvidos. A cada Sprint, um desenvolvedor diferente assume temporariamente o papel de líder do time, acumulando as funções de desenvolvedor e líder. Além disso, é possível que um desenvolvedor seja promovido a gerente da equipe, assumindo exclusivamente essa função, assim como um gerente pode ser promovido ao cargo de Product Owner.
+
+Com base nisso, modifique o código do repositório abaixo (desconsidere o README) para desenvolver o sistema especificado, considerando Code Smells e os princípios de projeto de software Orientado a Objetos: “Programe para um Interface” e “Prefira Composição ao invés de Herança”.
